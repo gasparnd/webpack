@@ -1,0 +1,23 @@
+{
+  "name": "webpack-4",
+  "version": "1.0.0",
+  "description": "webpack-4 course",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode development",
+    "build:production": "webpack --mode production",
+    "build:external": "webpack --config ./external/webpack.config.js",
+    "build:multi": "webpack --config ./multi-entry-points/webpack.config.js"
+  },
+  "keywords": [
+    "webpack",
+    "javascript"
+  ],
+  "author": "@gasparnd",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "4.32.2",
+    "webpack-cli": "3.3.2"
+  }
+}
