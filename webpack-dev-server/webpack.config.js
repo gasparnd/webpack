@@ -16,9 +16,7 @@ module.exports = {
 		rules: [{
 			test: /\.css?/,
 			use: [
-				{
-					loader: MiniCSSExtractPlugin.loader
-				},
+				'style-loader',
 				'css-loader'
 			],
 		}]
@@ -29,9 +27,6 @@ module.exports = {
 	},
 	plugins: [
 		new webpack.HotModuleReplacementPlugin(),
-		new MiniCSSExtractPlugin({
-			filename: 'css/[name].css'
-		}),
 		new HtmlWebpackPlugin({
 			title: 'Plugins'
 		})

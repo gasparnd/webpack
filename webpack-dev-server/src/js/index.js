@@ -1,3 +1,12 @@
 import '../css/index.css'
+import text from './text'
 
-document.body.innerHTML = '<h1>Hello World from WebPack</h1>'
+text()
+
+
+if (module.hot) {
+	module.hot.accept('./text.js', () => {
+		console.log('Hot load')
+		text()
+	})
+}

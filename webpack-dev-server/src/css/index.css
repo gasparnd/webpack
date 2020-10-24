@@ -1,10 +1,10 @@
 body {
-	background: lightblue;
+	background: #AFA;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	margin: 0;
 	min-height: 100vh;
-	font-size: 50px;
+	font-size: 30px;
 	font-family: Helvetica;
 }
