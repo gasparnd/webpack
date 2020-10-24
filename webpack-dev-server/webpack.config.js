@@ -1,6 +1,7 @@
 const path = require('path') //it's help we to create better path's. Package from node.js
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const webpack = require('webpack')
 
 module.exports = {
 	entry: {
@@ -22,7 +23,12 @@ module.exports = {
 			],
 		}]
 	}, 
+	devServer: {
+		hot: true,
+		open: true,
+	},
 	plugins: [
+		new webpack.HotModuleReplacementPlugin(),
 		new MiniCSSExtractPlugin({
 			filename: 'css/[name].css'
 		}),
