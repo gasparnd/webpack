@@ -10,7 +10,7 @@ const App = () => {
 	}
 	return (
 		<div>
-			Beutiful React App
+			Beautiful React App
 			<ul>
 				{
 					loaderList.map(item => <Loader {...item} key={item.id} />)
